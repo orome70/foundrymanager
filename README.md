@@ -11,3 +11,20 @@ It should also have a basic identity management system so that each user is conn
 
 This project is placed under Affero General public license (provided as file License).
 Contributions are welcome do not hesitate to get in touch with me.
+
+### install
+
+```bash
+pip install flask
+```
+
+### run
+
+```bash
+python3 runFoundryManager.py
+```
+Ou bien 
+
+```bash
+ ./runFoundryManager.py
+```

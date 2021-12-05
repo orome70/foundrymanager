@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Header -->
+<header class="w3-container w3-blue-gray w3-center" style="padding:50px 16px">
+  <h1 class="w3-margin w3-jumbo">{{ pageData.title}}</h1>
+  <p>Utilisateur : {{ pageData.params['user'].name}} </p>
+  <p>Email : {{ pageData.params['user'].email}} </p>
+  <p>Tel : {{ pageData.params['displayTel'] }} </p>
+</header>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-phone-square w3-padding-64 w3-text-blue-gray w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Historique de mes appels</h1>
+      {% print(pageData.tableFunction(pageData.params['user'].tel)) %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
