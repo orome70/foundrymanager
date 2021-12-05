@@ -4,9 +4,7 @@
 <!-- Header -->
 <header class="w3-container w3-blue-gray w3-center" style="padding:50px 16px">
   <h1 class="w3-margin w3-jumbo">{{ pageData.title}}</h1>
-  <p>Utilisateur : {{ pageData.params['user'].name}} </p>
-  <p>Email : {{ pageData.params['user'].email}} </p>
-  <p>Tel : {{ pageData.params['displayTel'] }} </p>
+  <p>Email : {{ pageData.params['user']}} </p>
 </header>
 
 <!-- Second Grid -->
@@ -17,8 +15,8 @@
     </div>
 
     <div class="w3-twothird">
-      <h1>Historique de mes appels</h1>
-      {% print(pageData.tableFunction(pageData.params['user'].tel)) %}
+      <h1>Titre</h1>
+      {% print("Hello") %}
     </div>
   </div>
 </div>

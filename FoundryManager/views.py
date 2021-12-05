@@ -34,6 +34,7 @@ def profile(email=None):
     Page de profile
     """
     params = {}
+    params['user'] = email
     # Here we chould get user data from email
     pageData = PageData("Profil " + email, "C'est la page de profil de l'utilisateur" + email, params)
     return render_template('profile.html', pageData=pageData)
