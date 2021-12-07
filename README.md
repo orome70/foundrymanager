@@ -16,6 +16,7 @@ Contributions are welcome do not hesitate to get in touch with me.
 
 ```bash
 pip install flask
+pip install flask-sqlalchemy
 ```
 
 ### run
